@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Strip Sent Attachments",
+  "version": "1.0",
+  "description": "Removes attachments from the saved copy of a message after it has been sent.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "strip-sent-attachments@arieverhagen.nl",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": { "required": ["none"] }
+    }
+  },
+  "permissions": ["compose", "messagesRead", "messagesModifyPermanent"],
+  "background": { "scripts": ["background.js"] }
+}
